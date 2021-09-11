@@ -1,2 +1,3 @@
-l={'O':'0','L':'1','Z':'2','E':'3','A':'4','S':'5','G':'6','T':'7','B':'8','Q':'9'}
-for p in input():print(p if p.upper()not in l.keys()else l[p.upper()],end="")
+s=input()
+for a,b in zip("OLZEASGTBQolzeasgtbq","0123456789"*2):s=s.replace(a,b)
+print(s)
